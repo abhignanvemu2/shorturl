@@ -4,7 +4,7 @@ const redisClient = require('../../config/RedisClient');
 const { formattedDate } = require('../../Lib');
 
 // Constants for rate limiting
-const RATE_LIMIT = 500; // Maximum short URLs allowed per user per hour
+const RATE_LIMIT = 5; // Maximum short URLs allowed per user per hour
 const EXPIRATION_TIME = 60 * 60; // 1 hour in seconds
 
 const Post = async (request, response) => {
